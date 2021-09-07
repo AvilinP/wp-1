@@ -51,7 +51,7 @@
 					<div class="col-xs-12">
 						<ul class="menu">
 							<li class="current-menu-item">
-								<a href="index.html">Hem</a>
+								<!-- <a href="index.html">Hem</a>
 							</li>
 							<li>
 								<a href="blogg.html">Blogg</a>
@@ -70,7 +70,7 @@
 							</li>
 							<li>
 								<a href="kontakt.html">Kontakt</a>
-							</li>
+							</li> -->
                             <?php wp_nav_menu( array ('theme_location' => 'main-menu')); ?> 
 						</ul>
 					</div>
