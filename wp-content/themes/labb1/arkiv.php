@@ -1,20 +1,20 @@
 <?php
 /*
-Template Name: MyTemplateLabbBlogg
+Template Name: MyTemplateLabbArkiv
 */
 
 ?>
 
 <?php get_header(); ?> 
 
-        <main>
+<main>
 			<section>
 				<div class="container">
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
-							<h1>Blogg</h1>
+							<h1>Arkiv: Oktober 2016</h1>
 							<article>
-                                <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2021/09/washington.jpg" />
+                            <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2021/09/washington.jpg" />
 								<h2 class="title">
 									<a href="inlagg.html">Det tredje inlägget</a>
 								</h2>
@@ -23,7 +23,7 @@ Template Name: MyTemplateLabbBlogg
 										<i class="fa fa-calendar"></i> 1 januari, 2016
 									</li>
 									<li>
-										<i class="fa fa-user"></i> <a href="http://localhost/wptheme/forfattare/">Peter Pärmenäs</a>
+										<i class="fa fa-user"></i> <a href="forfattare.html">Peter Pärmenäs</a>
 									</li>
 									<li>
 										<i class="fa fa-tag"></i> <a href="kategori.html">Kategori 1</a>, <a href="kategori.html">Kategori 2</a>
@@ -32,7 +32,7 @@ Template Name: MyTemplateLabbBlogg
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sodales mauris. Aliquam felis est, efficitur vel fringilla quis, vehicula quis ex. Phasellus tristique nunc in leo faucibus, a consequat nulla sagittis. In sed mi mi. Praesent condimentum sollicitudin nibh. Vivamus vulputate purus quis volutpat fringilla. Ut tortor libero, semper eget dolor vel, hendrerit tempus dui. Suspendisse dictum efficitur blandit. In porta scelerisque nulla ac placerat.</p>
 							</article>
 							<article>
-                                <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2021/09/paris.jpg" />
+                            <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2021/09/paris.jpg" />
 								<h2 class="title">
 									<a href="inlagg.html">Mitt andra inlägg</a>
 								</h2>
@@ -41,7 +41,7 @@ Template Name: MyTemplateLabbBlogg
 										<i class="fa fa-calendar"></i> 1 januari, 2016
 									</li>
 									<li>
-										<i class="fa fa-user"></i> <a href="http://localhost/wptheme/forfattare/">John Doe</a>
+										<i class="fa fa-user"></i> <a href="forfattare.html">Peter Pärmenäs</a>
 									</li>
 									<li>
 										<i class="fa fa-tag"></i> <a href="kategori.html">Kategori 1</a>, <a href="kategori.html">Kategori 3</a>
@@ -50,7 +50,7 @@ Template Name: MyTemplateLabbBlogg
 								<p>Integer quis eros at urna pulvinar mollis eget quis ex. Nam fringilla tellus at ligula consequat, sed sagittis ipsum ultricies. Nunc pretium bibendum enim id iaculis. Nam sed leo non sem aliquam imperdiet dictum vitae magna. Phasellus ac accumsan dolor, quis congue mauris. Maecenas vehicula, arcu sed congue euismod, mi urna rhoncus nunc, et feugiat arcu tellus vitae odio. Sed luctus vel lorem vel dictum. Suspendisse potenti. Proin vel efficitur ex. Suspendisse scelerisque rutrum mattis. In sed laoreet augue, non maximus ante. Nam a rhoncus ligula. Aliquam at aliquet lorem. Suspendisse non risus tincidunt, gravida augue non, fringilla libero.</p>
 							</article>
 							<article>
-                                <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2021/09/london.jpg" />
+                            <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2021/09/london.jpg" />
 								<h2 class="title">
 									<a href="inlagg.html">Hej världen!</a>
 								</h2>
@@ -59,7 +59,7 @@ Template Name: MyTemplateLabbBlogg
 										<i class="fa fa-calendar"></i> 1 januari, 2016
 									</li>
 									<li>
-										<i class="fa fa-user"></i> <a href="http://localhost/wptheme/forfattare/">Peter Pärmenäs</a>
+										<i class="fa fa-user"></i> <a href="forfattare.html">Peter Pärmenäs</a>
 									</li>
 									<li>
 										<i class="fa fa-tag"></i> <a href="kategori.html">Kategori 1</a>, <a href="kategori.html">Kategori 2</a>, <a href="kategori.html">Kategori 3</a>
@@ -92,13 +92,7 @@ Template Name: MyTemplateLabbBlogg
 									<li class="pagenav">
 										<h2>Sidor</h2>
 										<ul>
-										<?php wp_nav_menu( array (
-												'theme_location' => 'side-bar',
-												// 'container_class' => 'navigation',
-												// 'container' => 'div',  
-												'menu_id' => 'navigation')); 
-											?> 
-											<!-- <li class="page_item current_page_item">
+											<li class="page_item current_page_item">
 												<a href="">Blogg</a>
 											</li>
 											<li class="page_item">
@@ -125,14 +119,14 @@ Template Name: MyTemplateLabbBlogg
 											</li>
 											<li class="page_item">
 												<a href="">Startsida</a>
-											</li> -->
+											</li>
 										</ul>
 									</li>
 									<li>
 										<h2>Arkiv</h2>
 										<ul>
 											<li>
-												<a href="http://localhost/wptheme/arkiv/">oktober 2016</a>
+												<a href="arkiv.html">oktober 2016</a>
 											</li>
 										</ul>
 									</li>
@@ -154,6 +148,7 @@ Template Name: MyTemplateLabbBlogg
 				</div>
 			</section>
 		</main>
+
 
 
 <?php get_footer(); ?> 

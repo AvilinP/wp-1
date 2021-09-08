@@ -22,8 +22,9 @@ function register_my_menus() {
     register_nav_menus(
         array(
             'main-menu' => _('Main Menu Labb 1'),
-            'mobile-menu' => _(' Mobile Menu Labb 1'),
-            'secondary-menu' => _(' Undermeny Labb 1')
+            'mobile-menu' => _('Mobile Menu Labb 1'),
+            'secondary-menu' => _('Undermeny Labb 1'),
+            'side-bar' => _('Sidebar Labb 1') 
         )
         );
 }
