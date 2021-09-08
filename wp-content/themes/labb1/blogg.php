@@ -16,7 +16,7 @@ Template Name: MyTemplateLabbBlogg
 							<article>
                                 <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2021/09/washington.jpg" />
 								<h2 class="title">
-									<a href="inlagg.html">Det tredje inlägget</a>
+									<a href="http://localhost/wptheme/det-tredje-inlagget/">Det tredje inlägget</a>
 								</h2>
 								<ul class="meta">
 									<li>

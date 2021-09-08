@@ -47,7 +47,7 @@
 									<li>
 											<i class="fa fa-tag">
 												<a href="<?php the_permalink(); ?>">
-													<?php the_category(); ?>
+													<?php echo get_the_category_list(", "); ?>
 												</a>
 											</i> 		
 									</li>
@@ -58,7 +58,7 @@
 								</p>
 							</article>
 						</div>
-						
+
 						<aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
 								<ul>
