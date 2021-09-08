@@ -91,42 +91,16 @@ Template Name: MyTemplateLabbBlogg
 								<ul role="navigation">
 									<li class="pagenav">
 										<h2>Sidor</h2>
-										<ul>
+										
 										<?php wp_nav_menu( array (
 												'theme_location' => 'side-bar',
+												'items_wrap' => '<ul role="navigation"> %3$s</ul>',
 												// 'container_class' => 'navigation',
 												// 'container' => 'div',  
-												'menu_id' => 'navigation')); 
+												'menu_class' => 'pagenav'
+											)); 
 											?> 
-											<!-- <li class="page_item current_page_item">
-												<a href="">Blogg</a>
-											</li>
-											<li class="page_item">
-												<a href="">Exempelsida</a>
-											</li>
-											<li class="page_item">
-												<a href="">Kontakt</a>
-											</li>
-											<li class="page_item page_item_has_children">
-												<a href="">Om mig</a>
-												<ul class="children">
-													<li class="page_item">
-														<a href="">Intressen</a>
-													</li>
-													<li class="page_item page_item_has_children">
-														<a href="">Portfolio</a>
-														<ul class="children">
-															<li class="page_item">
-																<a href="">Projekt 1</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li class="page_item">
-												<a href="">Startsida</a>
-											</li> -->
-										</ul>
+	
 									</li>
 									<li>
 										<h2>Arkiv</h2>
