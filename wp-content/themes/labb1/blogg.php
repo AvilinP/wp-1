@@ -91,16 +91,11 @@ Template Name: MyTemplateLabbBlogg
 								<ul role="navigation">
 									<li class="pagenav">
 										<h2>Sidor</h2>
-										<ul class="side-bar-AP">
 										<?php wp_nav_menu( array (
 												'theme_location' => 'side-bar',
-												// 'items_wrap' => '<ul role="navigation"> %3$s</ul>',
-												// 'container_class' => 'navigation',
-												// 'container' => 'div',  
-												'menu_class' => 'side-bar-AP'
+												'container' => 'ul'
 											)); 
 											?> 
-	
 									</li>
 									<li>
 										<h2>Arkiv</h2>
@@ -118,8 +113,7 @@ Template Name: MyTemplateLabbBlogg
 												</li>
 												<li class="cat-item">
 													<a href="">Okategoriserade</a> (3)
-												</li>
-											</ul>  <!-- Ul kopplad till min-egen-class --> 
+												</li> 
 										</ul>
 									</li>
 								</ul>

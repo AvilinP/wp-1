@@ -19,7 +19,6 @@ Template Name: MyTemplateLabbKontakt
 								<label>E-post</label>
 								<input type="email" />
 								<label>Meddelande</label>
-                                <br/>
 								<textarea></textarea>
 								<input type="submit" value="Skicka" />
 							</form>
