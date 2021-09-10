@@ -1,18 +1,20 @@
-<?php
+<?php 
 /*
-Template Name: MyTemplateLabbBlogg
-*/
+
+    Template Name: MyTemplateLabbKategori
+
+ */
 
 ?>
 
 <?php get_header(); ?> 
 
-        <main>
+		<main>
 			<section>
 				<div class="container">
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
-							<h1>Blogg</h1>
+							<h1> <?php the_title();?> </h1>
 
 							<?php if (have_posts() ) : ?>
             						<?php while (have_posts() ) : the_post(); ?>
@@ -45,7 +47,10 @@ Template Name: MyTemplateLabbBlogg
 						</div>
 
 						<?php endif; ?> 
-						
+
+
+
+				
 						<aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
 								<ul>
@@ -62,17 +67,40 @@ Template Name: MyTemplateLabbBlogg
 								<ul role="navigation">
 									<li class="pagenav">
 										<h2>Sidor</h2>
-										<?php wp_nav_menu( array (
-												'theme_location' => 'side-bar',
-												'container' => 'ul'
-											)); 
-											?> 
+										<ul>
+											<li class="page_item current_page_item">
+												<a href="">Blogg</a>
+											</li>
+											<li class="page_item">
+												<a href="">Exempelsida</a>
+											</li>
+											<li class="page_item">
+												<a href="">Kontakt</a>
+											</li>
+											<li class="page_item page_item_has_children">
+												<a href="">Om mig</a>
+												<ul class="children">
+													<li class="page_item">
+														<a href="">Intressen</a>
+													</li>
+													<li class="page_item page_item_has_children">
+														<a href="">Portfolio</a>
+														<ul class="children">
+															<li class="page_item">
+																<a href="">Projekt 1</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="page_item">
+												<a href="">Startsida</a>
+											</li>
+										</ul>
 									</li>
 									<li>
 										<h2>Arkiv</h2>
-										
 										<?php wp_get_archives();?>
-										
 												<li class="categories">
 												<h2>Kategorier</h2>
 												<ul>
@@ -81,20 +109,19 @@ Template Name: MyTemplateLabbBlogg
 													'orderby' => 'name',
 													'order'   => 'ASC'
 												) );
+
 												foreach( $categories as $category ) {
 												echo '<li class="cat-item"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a><span class="text-white"> (' . $category->category_count . ')' . '</span></li>';   
 												} ?>
 												</ul>
 											</li>
-										</ul>
-									</li>
+
 								</ul>
 							</div>
 						</aside>
 					</div>
 				</div>
 			</section>
-		</main> 
-
+		</main>
 
 <?php get_footer(); ?> 

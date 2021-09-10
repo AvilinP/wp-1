@@ -1,21 +1,22 @@
 <?php
 /*
-Template Name: MyTemplateLabbBlogg
+Template Name: MyTemplateLabbArkiv
+
 */
 
 ?>
 
 <?php get_header(); ?> 
 
-        <main>
+<main>
 			<section>
 				<div class="container">
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
-							<h1>Blogg</h1>
+							<h1> <?php the_title(); ?>: Oktober 2016 </h1>
 
-							<?php if (have_posts() ) : ?>
-            						<?php while (have_posts() ) : the_post(); ?>
+          						<?php while(have_posts()){ the_post()
+              						?> 
 										<article>  
 											<img src="<?php echo get_the_post_thumbnail_url(); ?>"/>
 												<h2 class="title">
@@ -34,8 +35,7 @@ Template Name: MyTemplateLabbBlogg
 												</ul>
 												<p><?php the_excerpt(); ?></p>
 										</article>
- 
-                    				<?php endwhile; ?>
+										<?php } ?>
         						</div>
     					
 							<nav class="navigation pagination">
@@ -44,9 +44,8 @@ Template Name: MyTemplateLabbBlogg
 							</nav>
 						</div>
 
-						<?php endif; ?> 
-						
-						<aside id="secondary" class="col-xs-12 col-md-3">
+
+			<aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
 								<ul>
 									<li>
@@ -70,22 +69,21 @@ Template Name: MyTemplateLabbBlogg
 									</li>
 									<li>
 										<h2>Arkiv</h2>
-										
-										<?php wp_get_archives();?>
-										
-												<li class="categories">
-												<h2>Kategorier</h2>
-												<ul>
-												<?php
-												$categories = get_categories( array(
-													'orderby' => 'name',
-													'order'   => 'ASC'
-												) );
-												foreach( $categories as $category ) {
-												echo '<li class="cat-item"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a><span class="text-white"> (' . $category->category_count . ')' . '</span></li>';   
-												} ?>
-												</ul>
+										<ul>
+											<li>
+												<a href="http://localhost/wptheme/arkiv/">oktober 2016</a>
 											</li>
+										</ul>
+									</li>
+									<li class="categories">
+										<h2>Kategorier</h2>
+										<ul>
+												<li class="cat-item">
+													<a href="">Natur</a> (1)
+												</li>
+												<li class="cat-item">
+													<a href="">Okategoriserade</a> (3)
+												</li> 
 										</ul>
 									</li>
 								</ul>
@@ -94,7 +92,8 @@ Template Name: MyTemplateLabbBlogg
 					</div>
 				</div>
 			</section>
-		</main> 
+		</main>
+
 
 
 <?php get_footer(); ?> 
