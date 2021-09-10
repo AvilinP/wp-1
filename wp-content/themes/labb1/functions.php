@@ -14,10 +14,12 @@ function add_theme_scripts() {
 
 }
 
-// Thumbnails
+// Theme support
 function post_page_features() {
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'menus' );
+    add_theme_support('title-tag');
+    add_theme_support('widgets');
 }
 
 // För att registrera menyer inne i WP Dashboard -> för att skapa en dynamisk meny

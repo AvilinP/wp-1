@@ -85,7 +85,7 @@ define( 'WP_DEBUG', true );
 /* Add any custom values between this line and the "stop editing" line. */
 
 
-
+define('CONCATENATE_SCRIPTS', false);
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

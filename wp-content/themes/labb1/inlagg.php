@@ -20,7 +20,6 @@
                                     $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
                                     <?php if ( $wpb_all_query->have_posts() ) : ?>
                                 <ul>
-                                <!-- the loop -->
                                     <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
                                     <?php endwhile; ?>
                                 </ul>
@@ -75,54 +74,29 @@
 								<ul role="navigation">
 									<li class="pagenav">
 										<h2>Sidor</h2>
-										<ul>
-											<li class="page_item current_page_item">
-												<a href="">Blogg</a>
-											</li>
-											<li class="page_item">
-												<a href="">Exempelsida</a>
-											</li>
-											<li class="page_item">
-												<a href="">Kontakt</a>
-											</li>
-											<li class="page_item page_item_has_children">
-												<a href="">Om mig</a>
-												<ul class="children">
-													<li class="page_item">
-														<a href="">Intressen</a>
-													</li>
-													<li class="page_item page_item_has_children">
-														<a href="">Portfolio</a>
-														<ul class="children">
-															<li class="page_item">
-																<a href="">Projekt 1</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li class="page_item">
-												<a href="">Startsida</a>
-											</li>
-										</ul>
+										<?php wp_nav_menu( array (
+												'theme_location' => 'side-bar',
+												'container' => 'ul'
+											)); 
+											?> 
 									</li>
 									<li>
 										<h2>Arkiv</h2>
 										<ul>
 											<li>
-												<a href="arkiv.html">oktober 2016</a>
+												<a href="http://localhost/wptheme/arkiv/">oktober 2016</a>
 											</li>
 										</ul>
 									</li>
 									<li class="categories">
 										<h2>Kategorier</h2>
 										<ul>
-											<li class="cat-item">
-												<a href="">Natur</a> (1)
-											</li>
-											<li class="cat-item">
-												<a href="">Okategoriserade</a> (3)
-											</li>
+												<li class="cat-item">
+													<a href="">Natur</a> (1)
+												</li>
+												<li class="cat-item">
+													<a href="">Okategoriserade</a> (3)
+												</li> 
 										</ul>
 									</li>
 								</ul>
