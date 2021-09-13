@@ -13,6 +13,7 @@
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
 							<article>
+								
                             <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2021/09/washington.jpg" />
 
                                 <!-- Loop för att hämta blogginlägg   -->

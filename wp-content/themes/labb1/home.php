@@ -45,8 +45,11 @@ Template Name: MyTemplateLabbBlogg
 						</div>
 
 						<?php endif; ?> 
-						
-						<aside id="secondary" class="col-xs-12 col-md-3">
+
+						<?php get_sidebar('side-bar'); ?> 
+
+											
+						<!-- <aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
 								<ul>
 									<li>
@@ -90,7 +93,8 @@ Template Name: MyTemplateLabbBlogg
 									</li>
 								</ul>
 							</div>
-						</aside>
+						</aside> -->
+
 					</div>
 				</div>
 			</section>
