@@ -1,4 +1,3 @@
-<!-- Menyer, side bar, utvalda bilder, likt tillägg men specifikt bundet till temat  -->
 <?php
 
 // Köa in CSS och JS 
@@ -13,6 +12,8 @@ function add_theme_scripts() {
     wp_enqueue_style('maincss');
 
 }
+
+add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 // Theme support
 function post_page_features() {
@@ -35,7 +36,5 @@ function register_my_menus() {
 }
 
 add_action('init', 'register_my_menus');
-add_action('wp_enqueue_scripts', 'add_theme_scripts');
-add_action('after_theme_setup', 'post_page_features');
+add_action('init', 'post_page_features');
 
-?>
