@@ -35,9 +35,6 @@
 			<form id="searchform" class="searchform">
 				<div>
 					<?php echo get_search_form(); ?>
-					<!-- <label class="screen-reader-text">Sök efter:</label>
-					<input type="text" />
-					<input type="submit" value="Sök" /> -->
 				</div>
 			</form>
 		</div>
@@ -46,7 +43,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<!-- ev ta bort ul och li om det ger en mörk skugga -->
 						<ul class="menu">
 							<li class="current-menu-item">
                             <?php wp_nav_menu( array ('theme_location' => 'main-menu')); ?> 
