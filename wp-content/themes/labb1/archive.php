@@ -13,7 +13,7 @@ Template Name: MyTemplateLabbArkiv
 				<div class="container">
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
-							<h1> <?php the_title(); ?>: Oktober 2016 </h1>
+							<h1> Arkiv: Oktober 2016 </h1>
 
           						<?php while(have_posts()){ the_post()
               						?> 
@@ -36,20 +36,18 @@ Template Name: MyTemplateLabbArkiv
 												<p><?php the_excerpt(); ?></p>
 										</article>
 										<?php } ?>
-        						</div>
+        						
     					
 							<nav class="navigation pagination">
 								<h2 class="screen-reader-text">Inläggsnavigering</h2>
 								<?php echo paginate_links(); ?>
 							</nav>
 						</div>
-
 						<?php get_sidebar('side-bar'); ?> 
 					</div>
 				</div>
 			</section>
 		</main>
-
 
 
 <?php get_footer(); ?> 
